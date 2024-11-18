@@ -1,0 +1,221 @@
+/* Pricing section styles */
+.pricing-section {
+    padding: 6rem 8rem;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .pricing-header {
+    margin-bottom: 3rem;
+  }
+  
+  .pricing-title {
+    color: #1e1b4b;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-subtitle {
+    color: #6b7280;
+    font-size: 1rem;
+  }
+  
+  .pricing-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .toggle-text {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+  
+  .toggle-switch {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-switch.yearly {
+    background-color: #22d3ee;
+  }
+  
+  .toggle-switch::after {
+    content: "";
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: white;
+    border-radius: 50%;
+    top: 0.125rem;
+    left: 0.125rem;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .toggle-switch.yearly::after {
+    transform: translateX(1.5rem);
+  }
+  
+  .toggle-switch.active::after {
+    transform: translateX(1.5rem);
+  }
+  
+  .pricing-slider {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    position: relative;
+  }
+  
+  .slider-track {
+    height: 0.25rem;
+    background: linear-gradient(to right, #fb923c, #22d3ee);
+    border-radius: 9999px;
+    position: relative;
+  }
+  
+  .slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #22d3ee;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    color: #1e1b4b;
+    font-weight: 500;
+  }
+  
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .price-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  
+  .price-card.highlighted {
+    background-color: #22d3ee;
+    color: white;
+  }
+  
+  .price-card.highlighted:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .price-card-header {
+    margin-bottom: 2rem;
+  }
+  
+  .plan-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .yearly-savings {
+    background-color: #fb923c;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+  
+  .price-features {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .price-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .feature-check {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: rgba(34, 211, 238, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .highlighted .feature-check {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .price-button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .price-button.primary {
+    background-color: #22d3ee;
+    color: white;
+  }
+  
+  .price-button.primary:hover {
+    background-color: #06b6d4;
+  }
+  
+  .price-button.secondary {
+    background-color: white;
+    color: #22d3ee;
+    border: 1px solid #22d3ee;
+  }
+  
+  .price-button.secondary:hover {
+    background-color: rgba(34, 211, 238, 0.1);
+  }
+  
+  .highlighted .price-button.secondary {
+    background-color: white;
+    color: #22d3ee;
+    border: none;
+  }
+  
+  .highlighted .price-button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }

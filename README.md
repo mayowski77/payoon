@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Payoon
+
+A modern banking solution for freelancers.
+
+## Features
+
+- Automatic tax withholding
+- Fee-free salary transfers
+- Virtual debit cards
+- Comprehensive financial management
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm start`
+
+## Build
+
+To create a production build:
+```bash
+npm run build

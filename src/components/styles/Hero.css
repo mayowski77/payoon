@@ -1,0 +1,294 @@
+.hero {
+  padding: 4rem 6rem;
+  position: relative;
+  margin-bottom: 5rem;
+  min-height: 800px;
+  background-color: #1e1b4b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 48rem;
+  margin: 0;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.hero-badge-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.new-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.integration-text {
+  color: #d1d5db;
+  font-size: 0.875rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 36rem;
+}
+
+.cta-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.free-trial-btn {
+  background-color: #22d3ee;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.free-trial-btn:hover {
+  background-color: #06b6d4;
+}
+
+.watch-video-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.watch-video-btn:hover {
+  background-color: #3b8c3b;
+  transform: scale(1.05);
+}
+
+.video-icon {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.stat-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.powered-by {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.powered-text {
+  color: #d1d5db;
+  font-size: 0.875rem;
+}
+
+.partner-logos {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.partner-logo {
+  height: 2rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.partner-logo:hover {
+  opacity: 1;
+}
+
+
+
+/* Stats Cards Styles */
+.stat-cards {
+  position: absolute;
+  right: 6rem;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 20rem;
+  max-height: calc(100% - 8rem); /* Ensure it stays within hero section */
+  overflow: visible;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.122);
+  flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+/* Spend Stats Card */
+.spend-stats {
+  height: auto;
+  min-height: 250px;
+}
+
+.spend-stats .card-title {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.stats-graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 150px;
+}
+
+.stat-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 8px;
+  height: 60px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  transition: height 0.3s;
+}
+
+.bar.active {
+  background-color: #22d3ee;
+  height: 100px;
+}
+
+.day-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Credit card */
+.credit-card {
+  background: linear-gradient(to right, #fb923c, #fdba74);
+  padding: 1.5rem;
+  color: white;
+}
+
+.card-label {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.card-name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card-number {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.number-group {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.valid-till {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Balance card */
+.balance-card {
+  padding: 1.5rem;
+}
+
+.balance-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.income-container {
+  background-color: #22d3ee;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.income-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.income-icon {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.income-text {
+  font-size: 0.875rem;
+}
+
+.income-amount {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
